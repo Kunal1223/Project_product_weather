@@ -1,10 +1,11 @@
+import React from 'react';
 import './App.css';
+import Wethapp from './component/Wethapp';
 
 function App() {
   return (
     <>
-    <h1>code is comming soon...😂. I am working on it</h1>
-
+    <Wethapp/>
     </>
   );
 }
