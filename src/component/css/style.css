@@ -32,6 +32,7 @@ html{
     transform: translate3d(0 , 0 ,0);
     min-width: 20rem;
     min-height: 30rem;
+    margin-left: 90%;
 }
 
 .inputfield{
