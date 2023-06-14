@@ -25,12 +25,12 @@ const Wethapp = () => {
                 </div>
 
                 {!city ? (
-                    <h1>city not fount</h1>
+                    <h1 className="hari">city not fount</h1>
                 ) :
                     (<>
                         <div className="info">
                             <h2 className="location">
-                                <i class="fa-solid fa-street-view"></i>{search}
+                                <i className="fa-solid fa-street-view"></i>{search}
                             </h2>
                             <h1 className="temp">
                                 {city.temp}°Cel
