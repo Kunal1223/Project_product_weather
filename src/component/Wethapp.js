@@ -40,15 +40,15 @@ const Wethapp = () => {
                             </h3>
                         </div>
 
+                        <div className="wave">
                         <div className="wave-one"></div>
                         <div className="wave-Two"></div>
                         <div className="wave-Three"></div>
-
+                        </div>
                     </>
                     )
                 }
-            </div>
-
+            </div  >
         </>
     )
 }
