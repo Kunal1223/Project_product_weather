@@ -1,54 +1,55 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: antiquewhite; */
 }
 
-body{
-    background: #f3f2ef;
+body {
+    background-image: linear-gradient(to right, rgb(186, 224, 189), rgb(148, 211, 238));
+    /* background: #b5a984; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     height: 100vh;
-    width: 100vh;
-    font-family: "Jost" ,sans-serif;
+    width: 100%;
+    font-family: "Jost", sans-serif;
 }
 
-html{
+html {
     font-size: 100%;
     height: 100%;
     background: #eee;
 }
 
-.box{
+.box {
     width: 25vw;
     height: 60vh;
     border-radius: 0.5rem;
-    box-shadow: 0 0.2rem 3rem rgba(0,0,0,0.2);
-    background-image: linear-gradient(to right, rgb(155, 170, 224) , rgb(200, 106, 123));
+    box-shadow: 0 0.2rem 3rem rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(to right, rgb(155, 170, 224), rgb(200, 106, 123));
     position: relative;
     overflow: hidden;
-    transform: translate3d(0 , 0 ,0);
+    transform: translate3d(0, 0, 0);
     min-width: 20rem;
     min-height: 30rem;
-    margin-left: 90%;
 }
 
-.inputfield{
+.inputfield {
     border-radius: 20px;
     padding: 8px;
     margin: 6% 18%;
     border: 0px solid black;
 }
 
-.hari{
+.hari {
     text-align: center;
     align-items: center;
     color: red;
 }
 
-.info{
+.info {
     align-items: center;
     text-align: center;
 }
@@ -59,23 +60,35 @@ html{
     margin-top: 10%;
     color: rgb(255, 251, 0);
 }
-.location{
+
+.mine {
+    font-size: 21px;
+    margin-right: 2%;
+    margin-top: 10%;
+    color: rgb(215, 48, 30);
+}
+
+.location {
     font-size: 40px;
     color: rgb(69, 62, 116);
 }
 
-.temp{
+.temp {
     text-align: center;
-    margin-top: 14%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     color: rgb(46, 28, 120);
 }
 
-.tempmain{
-    margin-top: 1%;
+.tempmain {
+    margin-top: -7%;
     text-align: center;
-    color: rgb(4, 31, 35);
+    color: rgb(44, 26, 133);
     font-size: 18px;
 }
 
-
-
+.render{
+    color: rgb(234, 229, 150);
+    margin: 12% 10%;
+    font-size: 16px;
+}

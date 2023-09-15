@@ -17,6 +17,36 @@ const Wethapp = () => {
         fetchApi()
     }, [search])
 
+    const renderTemperatureMessage = () => {
+        if (city.temp < 10) {
+            return (
+                <h4>
+                    The world takes on a crisp and refreshing charm, as if nature itself is taking a deep breath.
+                </h4>
+            );
+        } else if(city.temp > 10 && city.temp < 20){
+            return (
+                <h4>
+                    The perfect balance is struck, where the air is comfortably cool, and the world seems to beckon for outdoor adventures.
+                </h4>
+            );
+        }
+        else if(city.temp > 20 && city.temp < 30){
+            return (
+                <h4>
+                    life blooms and thrives, and the world is painted in the vibrant hues of summer.
+                </h4>
+            );
+        }
+        else {
+            return (
+                <h4>
+                    the sun reigns supreme, casting its fiery glow upon the earth, and the world sizzles with the intensity of summer's embrace.
+                </h4>
+            );
+        }
+    };
+
     return (
         <>
             <div className="box">
@@ -35,16 +65,21 @@ const Wethapp = () => {
                             <h1 className="temp">
                                 {city.temp}°Cel
                             </h1>
-                            <h3 className="tempmain">
-                                Min: {city.temp_min}°Cel || Max:{city.temp_max}°Cel
-                            </h3>
-                        </div>
 
-                        <div className="wave">
-                        <div className="wave-one"></div>
-                        <div className="wave-Two"></div>
-                        <div className="wave-Three"></div>
+                            <h3 className="tempmain">
+                            <i class="fa-solid fa-temperature-low mine"></i>Min: {city.temp_min -7}°Cel
+                            </h3>
+                            <h3 className="tempmain">
+                            <i class="fa-solid fa-temperature-high mine"></i>Max:{city.temp_max +4}°Cel
+                            </h3>
+
+                            <div className="render">
+                                {renderTemperatureMessage()}
+                            </div>
                         </div>
+                        
+                        
+                        
                     </>
                     )
                 }
